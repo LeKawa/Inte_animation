@@ -2,7 +2,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Raleway:400,500,700" rel="stylesheet">
+  <link rel="icon" type="image/png" href="img/logo.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Welcome !</title>
@@ -27,18 +28,28 @@
             	C271.8,129.8,286.2,117.2,300.5,104.5z"/>
             </svg>
           </div>
-
-          <div class="Header_Nav_Home_Link">
-            <a href="#">coucou</a>
-            <a href="#">salut</a>
+          <div class="burger">
+            <span></span>
           </div>
+
+          <nav>
+            <ul class="main">
+              <li><a href="#0">Qui suis-je ?</a></li>
+              <li><a href="#0">Mes projets</a></li>
+              <li><a href="#0">Contact</a></li>
+            </ul>
+          </nav>
+            <div class="Header_Nav_Home_Link">
+              <a href="#">coucou</a>
+              <a href="#">salut</a>
+            </div>
         </div>
       </div>
     </section>
   </header>
   <section class="About">
     <div class="About_Title">
-      <h1>Je suis Hector Travaillé, un creative developper</h1>
+      <h1>Je suis Hector Travaillé, un creative developper.</h1>
     </div>
   </section>
   <section class="Desc">
@@ -46,7 +57,7 @@
       <img src="img/moi.jpg" alt="Hector">
     </div>
     <div class="Desc_Item">
-      <p class="Desc_Item_Som"><span></span>Introduction</p>
+      <p class="Desc_Item_Som"><span></span>. Introduction</p>
       <h2>Mais dis moi qui es-tu ?</h2>
       <p class="Desc_Item_Txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
         dolor in re</p>
@@ -55,22 +66,73 @@
   <section class="Who">
     <div class="Who_Container">
       <div class="Who_Container_Item">
+        <img src="img/photo.jpg" alt="moi">
       </div>
       <div class="Who_Container_Item">
+        <p class="Who_Container_Item_Nbr">
+          01
+        </p>
+        <p class="Who_Container_Item_Title">Developpeur Front</p>
+        <p class="Who_Container_Item_Txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exe</p>
       </div>
       <div class="Who_Container_Item">
+        <p class="Who_Container_Item_Nbr">
+          02
+        </p>
+        <p class="Who_Container_Item_Title">Developpeur Front</p>
+        <p class="Who_Container_Item_Txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exe</p>
       </div>
       <div class="Who_Container_Item">
+        <img src="img/photo.jpg" alt="moi">
       </div>
       <div class="Who_Container_Item">
+        <img src="img/photo.jpg" alt="moi">
       </div>
       <div class="Who_Container_Item">
+        <p class="Who_Container_Item_Nbr">
+          03
+        </p>
+        <p class="Who_Container_Item_Title">Developpeur Front</p>
+        <p class="Who_Container_Item_Txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exe</p>
       </div>
     </div>
   </section>
   <section class="Contact">
+    <div class="Contact_Item">
+      <h3>Get in touch.</h3>
+      <p>Vous voulez me contacter pour un projet ou autre ? Vous êtes le bienvenue</p>
+    </div>
 
   </section>
+  <section class="Contact_Contain">
+    <a href="#" class="Contact_Link">
+      <div class="Contact_Link_Item">
+        <p>Envoyer un mail</p>
+
+      </div>
+    </a>
+    <a href="#" class="Contact_Link">
+      <div class="Contact_Link_Item">
+        <p>Envoyer un mail</p>
+
+      </div>
+    </a>
+  </section>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+  <script src="main.js">
+  </script>
+  <script src="anime.min.js">
+  </script>
+  <script>
+    $('.burger, .overlay').click(function() {
+      $('.burger').toggleClass('clicked');
+      $('.overlay').toggleClass('show');
+      $('nav').toggleClass('show');
+      $('body').toggleClass('overflow');
+    });
+  </script>
 </body>
+
 
 </html>

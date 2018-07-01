@@ -1,0 +1,84 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Raleway:400,500,700" rel="stylesheet">
+  <link rel="icon" type="image/png" href="img/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Welcome !</title>
+  <link rel="stylesheet" href="style/css/style.css">
+</head>
+
+<body>
+  <header>
+    <section class="Header">
+      <div class="Header_Nav">
+        <div class="Header_Nav_Home">
+          <div class="Header_Nav_Home_Item">
+            <svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 461 461.4" style="enable-background:new 0 0 461 461.4;" xml:space="preserve">
+            <style type="text/css">
+            	.st0{fill:#4D27AF;}
+            	.st1{fill:#FFFFFF;}
+            </style>
+            <rect x="5" class="st0" width="450" height="450"/>
+            <path class="st1" d="M159.5,104.5c0,0-49,34-49,120c0,81.5,49,121,49,121l42-39l-28-62h41l-1-46h-39l28-56
+            	C188.2,129.8,173.8,117.2,159.5,104.5z"/>
+            <path class="st1" d="M300.5,104.5c0,0,49,34,49,120c0,81.5-49,121-49,121l-42-39l28-62h-41l1-46h39l-28-56
+            	C271.8,129.8,286.2,117.2,300.5,104.5z"/>
+            </svg>
+          </div>
+          <div class="burger">
+            <span></span>
+          </div>
+
+          <nav>
+            <ul class="main">
+              <li><a href="#0">Qui suis-je ?</a></li>
+              <li><a href="#0">Mes projets</a></li>
+              <li><a href="#0">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="Header_Nav_Home_Link">
+            <a href="#">coucou</a>
+            <a href="#">salut</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+  <section class="Article">
+    <div class="Article_Container">
+      <p class="Article_Container_Txt">.E-commerce, Design</p>
+      <p class="Article_Container_Title">Simpl.e</p>
+    </div>
+    <div class="Article_Img">
+      <img src="img/projet1.png" alt="Simple">
+    </div>
+    <div class="Article_Desc">
+      <p class="Article_Desc_Title">Le concept</p>
+      <p class="Article_Desc_Txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com</p>
+    </div>
+    <div class="Article_Link">
+      Vous pouvez en savoir plus sur
+      <a href="#" target="_blank">Github</a>
+
+    </div>
+  </section>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="main.js">
+  </script>
+  <script src="anime.min.js">
+  </script>
+  <script>
+    $('.burger, .overlay').click(function() {
+      $('.burger').toggleClass('clicked');
+      $('.overlay').toggleClass('show');
+      $('nav').toggleClass('show');
+      $('body').toggleClass('overflow');
+    });
+  </script>
+</body>
+
+
+</html>

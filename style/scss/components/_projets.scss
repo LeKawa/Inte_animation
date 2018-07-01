@@ -1,0 +1,62 @@
+.Projets {
+  width: 100%;
+  height: 100%;
+
+  &_Title {
+    height: 50%;
+    align-items: flex-end;
+    display: flex;
+    font-size: 32Px;
+    padding-left: 15%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+  }
+
+  &_Container {
+    width: 90%;
+    margin: 200px auto;
+    display: flex;
+    justify-content: space-between;
+
+    &_Left {
+      width: 45%;
+
+      &_Img {
+        overflow: hidden;
+        width: 100%;
+        margin-bottom: 130px;
+        height: 200px;
+        transition: all 0.2s ease-out;
+
+        &:hover {
+          opacity: 0.9;
+          transform: scale(0.97);
+        }
+        @include breakpoint(laptop) {
+          height: 310px;
+        }
+      }
+    }
+
+    &_Right {
+      display: block;
+      width: 45%;
+
+      &_Img {
+        overflow: hidden;
+        margin-top: 100Px;
+        width: 100%;
+        height: 260px;
+        transition: all 0.2s ease-out;
+
+        &:hover {
+          opacity: 0.9;
+          transform: scale(0.97);
+        }
+        @include breakpoint(laptop) {
+          height: 440px;
+        }
+      }
+    }
+  }
+}

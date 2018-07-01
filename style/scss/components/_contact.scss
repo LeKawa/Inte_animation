@@ -1,6 +1,73 @@
 .Contact {
   width: 70%;
-  height: 500px;
   margin: 0 auto;
-  background-color: red;
+
+  &_Contain {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    @include breakpoint(laptop) {
+      justify-content: space-between;
+      display: flex;
+    }
+  }
+
+  &_Link {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    width: 100%;
+    margin: 0 auto;
+    @include breakpoint(laptop) {
+      width: 40%;
+    }
+
+    &_Item {
+      width: 100%;
+      color: black;
+      margin: 20px auto;
+      height: 100px;
+      background-color: #FAFAFA;
+      transition: all 0.2s ease-out;
+
+      &:nth-child(1) {
+        margin: 50px auto;
+        @include breakpoint(laptop) {
+          margin: 100px auto 50px 0;
+        }
+      }
+
+      &:nth-child(2) {
+        margin: 50px auto 100px 0;
+      }
+
+      & > p {
+        padding-left: 35px;
+        padding-top: 30Px;
+      }
+
+      &:hover {
+        color: white;
+        background-color: black;
+      }
+    }
+  }
+
+  &_Item {
+    & > h3 {
+      font-weight: 700;
+      padding-top: 100px;
+      font-size: 36px;
+      font-family: 'Raleway', sans-serif;
+      @include breakpoint(laptop) {
+        font-size: 48px;
+      }
+    }
+
+    & > p {
+      line-height: 150%;
+      padding-top: 35px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+    }
+  }
 }

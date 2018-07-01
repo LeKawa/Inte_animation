@@ -8,12 +8,17 @@
   flex-direction: column;
 
   &_Title {
-    padding-left: 15%;
+    padding-left: 10%;
+    width: 90%;
     font-size: 32px;
-    width: 50%;
     line-height: 120%;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
+    @include breakpoint(laptop) {
+      padding-left: 15%;
+      width: 65%;
+      line-height: 150%;
+    }
   }
 }
 
@@ -27,27 +32,43 @@
     margin: 0 auto;
 
     & > img {
-      margin-top: -100px;
+      margin-top: -50px;
       width: 100%;
+      @include breakpoint(laptop) {
+        margin-top: -100px;
+      }
     }
   }
 
   &_Item {
-    width: 70%;
-    margin: 200px auto;
+    width: 80%;
+    margin: 100px auto;
+    @include breakpoint(laptop) {
+      margin: 150px auto 150px;
+      width: 70%;
+    }
+
     &_Txt {
-      width: 80%;
+      width: 90%;
       padding-top: 30Px;
-        font-family: 'Montserrat', sans-serif;
-      font-size: 16px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
       line-height: 160%;
+      @include breakpoint(laptop) {
+        width: 70%;
+              font-size: 16px;
+      }
     }
 
     & > h2 {
-      font-size: 48px;
+      line-height: 140%;
+      font-size: 36px;
       padding-top: 50px;
       font-weight: 700;
       font-family: 'Raleway', sans-serif;
+      @include breakpoint(laptop) {
+        font-size: 48px;
+      }
     }
 
     &_Som {
