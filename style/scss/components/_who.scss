@@ -1,0 +1,29 @@
+.Who {
+  display: flex;
+  flex-direction: column;
+
+  &_Container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: blue;
+
+    &_Item {
+      width: 50%;
+      height: 100%;
+
+      &:nth-child(2) {
+        background-color: #FAFAFA;
+      }
+
+      &:nth-child(3) {
+        background-color: #FAFAFA;
+      }
+
+      &:nth-child(6) {
+        background-color: #FAFAFA;
+      }
+    }
+  }
+}

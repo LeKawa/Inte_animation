@@ -222,6 +222,31 @@ table {
         height: 10px;
         background-color: red; }
 
+.Who {
+  display: flex;
+  flex-direction: column; }
+  .Who_Container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: blue; }
+    .Who_Container_Item {
+      width: 50%;
+      height: 100%; }
+      .Who_Container_Item:nth-child(2) {
+        background-color: #FAFAFA; }
+      .Who_Container_Item:nth-child(3) {
+        background-color: #FAFAFA; }
+      .Who_Container_Item:nth-child(6) {
+        background-color: #FAFAFA; }
+
+.Contact {
+  width: 70%;
+  height: 500px;
+  margin: 0 auto;
+  background-color: red; }
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
