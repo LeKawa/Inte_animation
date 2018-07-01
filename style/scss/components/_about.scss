@@ -1,0 +1,64 @@
+.About {
+  background: #FAFAFA;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  &_Title {
+    padding-left: 15%;
+    font-size: 32px;
+    width: 50%;
+    line-height: 120%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+  }
+}
+
+.Desc {
+  background-color: white;
+  width: 100%;
+
+  &_Img {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+
+    & > img {
+      margin-top: -100px;
+      width: 100%;
+    }
+  }
+
+  &_Item {
+    width: 70%;
+    margin: 200px auto;
+    &_Txt {
+      width: 80%;
+      padding-top: 30Px;
+        font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      line-height: 160%;
+    }
+
+    & > h2 {
+      font-size: 48px;
+      padding-top: 50px;
+      font-weight: 700;
+      font-family: 'Raleway', sans-serif;
+    }
+
+    &_Som {
+      font-family: 'Raleway', sans-serif;
+      font-size: 16px;
+
+      & > span {
+        width: 10Px;
+        height: 10px;
+        background-color: red;
+      }
+    }
+  }
+}

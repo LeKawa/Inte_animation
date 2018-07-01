@@ -1,0 +1,30 @@
+// RESET SCSS
+// MIXINS
+@import "./global/variables";
+@import "./global/reset";
+@import "./mixins/breakpoints";
+@import "./components/header";
+@import "./components/about";
+@import "./components/who";
+
+// /* FONTS */
+  //sass --watch scss/style.scss:css/style.css
+// @font-face {
+//   font-family: 'kraft_monoregular';
+//   src: url('../font/kraftmono-webfont.woff2') format('woff2'), url('../font/kraftmono-webfont.woff') format('woff');
+// }
+//
+// @font-face {
+//   font-family: 'kraft_monoitalic';
+//   src: url('../font/kraftmono-italic-webfont.woff2') format('woff2'), url('../font/kraftmono-italic-webfont.woff') format('woff');
+// }
+//
+// @font-face {
+//   font-family: 'rajdhanisemibold';
+//   src: url('../font/rajdhani-semibold-webfont.woff2') format('woff2'), url('../font/rajdhani-semibold-webfont.woff') format('woff');
+// }
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
