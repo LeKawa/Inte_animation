@@ -5,14 +5,21 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Raleway:400,500,700" rel="stylesheet">
   <link rel="icon" type="image/png" href="img/logo.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Webdesign,developpement,alternance,ux,ui,travaillé,hetic,Hector,Travaillé, Hector Travaillé, Travaille">
+  <meta property="og:title" content="Hector_Travaillé">
+  <meta property="og:url" content="http://www.hectortrv.com/">
+  <meta name="theme-color" content="#000000">
+  <meta property="og:description" content="Bonjour à toi, je suis Hector Travaillé un UX / UI designer..">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Bonjour à toi, je suis Hector Travaillé un UX / UI designer...">
+  <meta property="og:site_name" content="HectorTravaillé">
   <title>Welcome !</title>
   <link rel="stylesheet" href="style/css/style.css">
 </head>
 
 <body>
   <header>
-    <section class="Header" id="navbar">
+    <section class="Header"  id="navbar">
       <div class="Header_Nav">
         <div class="Header_Nav_Home">
           <div class="Header_Nav_Home_Item">
@@ -40,7 +47,7 @@
             </ul>
           </nav>
           <div class="Header_Nav_Home_Link">
-                        <a href="index.html">A propos</a>
+            <a href="index.html">A propos</a>
             <a href="projet.html">Projets</a>
             <a href="contact.html#contact">Contact</a>
           </div>
@@ -50,40 +57,42 @@
   </header>
   <section class="Article">
     <div class="Article_Container">
-      <p class="Article_Container_Txt">.E-commerce, Design</p>
-      <p class="Article_Container_Title">Simpl.e</p>
+      <p class="Article_Container_Txt">Decision game, Developpement</p>
+      <p class="Article_Container_Title">Les aventures de Titouan</p>
     </div>
     <div class="Article_Img">
-      <img src="img/projet1.png" alt="Simple">
+      <img src="img/ui3.jpg" alt="Simple">
     </div>
     <div class="Article_Desc">
       <p class="Article_Desc_Title">Le concept.</p>
-      <p class="Article_Desc_Txt">Simpl.e est un e-commerce consistant à choisir sa propre cigarette électronique et à la customiser. Notre but était de trouver un solution au problème des e-commerce de cigarette electronique car il n'y a pas de standard.</p>
+      <p class="Article_Desc_Txt">Le concept était simple. Etablir une histoire intéractive dans un site, la contraintes était de réalisé des requêtes AJAX. Nous avions une totale liberté sur le choix du thème.</p>
     </div>
     <div class="Article_Link">
-      Vous pouvez voir le code sur
-      <a href="https://github.com/metayerromain/WIK.E.VAP" target="_blank">Github</a>.
+      Vous pouvez tester l'histoire de Titouan sur ce
+      <a href="https://maximeoger.github.io/decision_game/" target="_blank">Lien</a>.
     </div>
     <div class="Article_More">
       <div class="Article_More_Img">
-        <img src="img/simple1.jpg" alt="">
+        <img src="img/decision1.png" alt="">
       </div>
       <div class="Article_More_Img">
-        <img src="img/simple2.png" alt="">
+        <img src="img/decision2.png" alt="">
       </div>
       <div class="Article_More_Img">
-        <img src="img/simple3.png" alt="">
+        <img src="img/decision3.png" alt="">
       </div>
       <div class="Article_More_Img">
-        <img src="img/simple4.png" alt="">
+        <img src="img/decision4.png" alt="">
       </div>
     </div>
     <div class="Article_Desc">
       <p class="Article_Desc_Title">Les Technos utilisées.</p>
       <p class="Article_Desc_Tech">HTML / CSS.</p>
       <p class="Article_Desc_Tech">JAVASCRIPT NATIF.</p>
-      <p class="Article_Desc_Tech">Jquery.</p>
-      <p class="Article_Desc_Tech">Unity.</p>
+      <p class="Article_Desc_Tech">AJAX.</p>
+      <p class="Article_Desc_Tech">Illustrator.</p>
+      <p class="Article_Desc_Tech">Tweenmax.</p>
+      <p class="Article_Desc_Tech">Anime.js.</p>
     </div>
   </section>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -103,6 +112,13 @@
     var header = document.getElementById("navbar");
 
     var toggle = function() {
+      //   if (scroll < scrollY) {
+      //     header.classList.add('navbar--hidden');
+      //     // header.style.transform = "translateY(0%)";
+      //   } else {
+      //     // header.style.transform = "translateY(-100%)";
+      //     header.classList.remove('navbar--hidden');
+      //   }
       header.classList.toggle('navbar--hidden', scroll < scrollY);
       scroll = scrollY;
     }

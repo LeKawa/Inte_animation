@@ -56,10 +56,6 @@
           text-align: center;
           transition: all 0.2s ease-out;
 
-          &:nth-child(1) {
-            margin-right: 35px;
-          }
-
           &:hover {
             // background-color: red;
           }
@@ -87,6 +83,7 @@ body.overflow {
 }
 /*  BURGER
 ========================================== */
+
 .burger {
   width: 40px;
   height: 40px;
@@ -175,6 +172,7 @@ body.overflow {
 }
 /*  NAV
 ========================================== */
+
 nav {
   background-color: #fafafa;
   position: fixed;
@@ -429,6 +427,7 @@ nav ul.sub li a:hover {
 }
 /*  OVERLAY
 ========================================== */
+
 .overlay {
   position: fixed;
   top: 0;

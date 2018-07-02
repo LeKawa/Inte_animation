@@ -40,6 +40,7 @@
             </ul>
           </nav>
           <div class="Header_Nav_Home_Link">
+            <a href="index.html">A propos</a>
             <a href="projet.html">Projets</a>
             <a href="index.html#contact">Contact</a>
           </div>
@@ -59,13 +60,14 @@
     <div class="Desc_Item">
       <p class="Desc_Item_Som"><span></span>. Introduction</p>
       <h2>Bien le bonjour/soir</h2>
-      <p class="Desc_Item_Txt">  Le web est arrivé sur moi par hasard lorsque j'étais tout petit, le dessin était pour moi un moyen incroyable de réaliser mes idées. Maintenant ma passion a évoluer et je me suis tourné vers le webdesign et le developpement, les contraintes me motive à me surpasser. Créer une interface n'est pas comme dessiner.</p>
+      <p class="Desc_Item_Txt"> Le web est arrivé sur moi par hasard lorsque j'étais tout petit, le dessin était pour moi un moyen incroyable de réaliser mes idées. Maintenant ma passion a évoluer et je me suis tourné vers le webdesign et le developpement, les contraintes me motive
+        à me surpasser. Créer une interface n'est pas comme dessiner.</p>
     </div>
   </section>
   <section class="Who">
     <div class="Who_Container">
       <div class="Who_Container_Item">
-        <img src="img/photo.jpg" alt="moi">
+        <img src="img/projet1.png" alt="moi">
       </div>
       <div class="Who_Container_Item">
         <p class="Who_Container_Item_Nbr">
@@ -82,17 +84,18 @@
         <p class="Who_Container_Item_Txt">Designer une app ou site fonctionnel fait partie intégrante aussi de ce que je sais réalisé. De la réalisation de Wireframe au prototypage pour les animations ( Suite adobe, Invision, Framer ).</p>
       </div>
       <div class="Who_Container_Item">
-        <img src="img/photo.jpg" alt="moi">
+        <img src="img/ux.jpg" alt="moi">
       </div>
       <div class="Who_Container_Item">
-        <img src="img/photo.jpg" alt="moi">
+        <img src="img/minecraft.png" alt="moi">
       </div>
       <div class="Who_Container_Item">
         <p class="Who_Container_Item_Nbr">
           03
         </p>
         <p class="Who_Container_Item_Title">Touche à tout</p>
-        <p class="Who_Container_Item_Txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exe</p>
+        <p class="Who_Container_Item_Txt">Il y a d'autre technos que j'aime utiliser, lors de mon temps libre j'aime réaliser des petits " trucs " avec des logiciels comme Unity ou Cinema4d. Je fais partie aussi d'une équipe qui s'appelle Pixelbiester qui créer des solutions 3d pour des
+          entreprises.</p>
       </div>
     </div>
   </section>
@@ -103,7 +106,7 @@
     </div>
 
   </section>
-  <section class="Contact_Contain">
+  <section class="Contact_Contain" id="contact">
     <a href="mailto:hector.travaille@hetic.net" class="Contact_Link">
       <div class="Contact_Link_Item">
         <p>Envoyer un mail</p>
@@ -134,13 +137,6 @@
     var header = document.getElementById("navbar");
 
     var toggle = function() {
-      //   if (scroll < scrollY) {
-      //     header.classList.add('navbar--hidden');
-      //     // header.style.transform = "translateY(0%)";
-      //   } else {
-      //     // header.style.transform = "translateY(-100%)";
-      //     header.classList.remove('navbar--hidden');
-      //   }
       header.classList.toggle('navbar--hidden', scroll < scrollY);
       scroll = scrollY;
     }
