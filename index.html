@@ -12,7 +12,7 @@
 
 <body>
   <header>
-    <section class="Header">
+    <section class="Header" id="navbar">
       <div class="Header_Nav">
         <div class="Header_Nav_Home">
           <div class="Header_Nav_Home_Item">
@@ -34,15 +34,15 @@
 
           <nav>
             <ul class="main">
-              <li><a href="#0">Qui suis-je ?</a></li>
-              <li><a href="#0">Mes projets</a></li>
+              <li><a href="index.html">Qui suis-je ?</a></li>
+              <li><a href="projet.html">Mes projets</a></li>
               <li><a href="#0">Contact</a></li>
             </ul>
           </nav>
-            <div class="Header_Nav_Home_Link">
-              <a href="#">coucou</a>
-              <a href="#">salut</a>
-            </div>
+          <div class="Header_Nav_Home_Link">
+            <a href="projet.html">Projets</a>
+            <a href="index.html#contact">Contact</a>
+          </div>
         </div>
       </div>
     </section>
@@ -58,9 +58,8 @@
     </div>
     <div class="Desc_Item">
       <p class="Desc_Item_Som"><span></span>. Introduction</p>
-      <h2>Mais dis moi qui es-tu ?</h2>
-      <p class="Desc_Item_Txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-        dolor in re</p>
+      <h2>Bien le bonjour/soir</h2>
+      <p class="Desc_Item_Txt">  Le web est arrivé sur moi par hasard lorsque j'étais tout petit, le dessin était pour moi un moyen incroyable de réaliser mes idées. Maintenant ma passion a évoluer et je me suis tourné vers le webdesign et le developpement, les contraintes me motive à me surpasser. Créer une interface n'est pas comme dessiner.</p>
     </div>
   </section>
   <section class="Who">
@@ -73,14 +72,14 @@
           01
         </p>
         <p class="Who_Container_Item_Title">Developpeur Front</p>
-        <p class="Who_Container_Item_Txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exe</p>
+        <p class="Who_Container_Item_Txt">Je développe des sites responsives, en utilisant les technos les plus adaptées afin de m'adapter au mieux à la demande du client. ( Php, Javascript natif, Jquery, Tweenmax, Threejs, HTML/SCSS).</p>
       </div>
       <div class="Who_Container_Item">
         <p class="Who_Container_Item_Nbr">
           02
         </p>
-        <p class="Who_Container_Item_Title">Developpeur Front</p>
-        <p class="Who_Container_Item_Txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exe</p>
+        <p class="Who_Container_Item_Title">UX / UI Designer</p>
+        <p class="Who_Container_Item_Txt">Designer une app ou site fonctionnel fait partie intégrante aussi de ce que je sais réalisé. De la réalisation de Wireframe au prototypage pour les animations ( Suite adobe, Invision, Framer ).</p>
       </div>
       <div class="Who_Container_Item">
         <img src="img/photo.jpg" alt="moi">
@@ -92,7 +91,7 @@
         <p class="Who_Container_Item_Nbr">
           03
         </p>
-        <p class="Who_Container_Item_Title">Developpeur Front</p>
+        <p class="Who_Container_Item_Title">Touche à tout</p>
         <p class="Who_Container_Item_Txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exe</p>
       </div>
     </div>
@@ -100,12 +99,12 @@
   <section class="Contact">
     <div class="Contact_Item">
       <h3>Get in touch.</h3>
-      <p>Vous voulez me contacter pour un projet ou autre ? Vous êtes le bienvenue</p>
+      <p>Vous voulez me contacter pour un projet ou autre ? Vous êtes le bienvenue.</p>
     </div>
 
   </section>
   <section class="Contact_Contain">
-    <a href="#" class="Contact_Link">
+    <a href="mailto:hector.travaille@hetic.net" class="Contact_Link">
       <div class="Contact_Link_Item">
         <p>Envoyer un mail</p>
 
@@ -113,8 +112,7 @@
     </a>
     <a href="#" class="Contact_Link">
       <div class="Contact_Link_Item">
-        <p>Envoyer un mail</p>
-
+        <p>Par mes réseaux</p>
       </div>
     </a>
   </section>
@@ -131,6 +129,25 @@
       $('nav').toggleClass('show');
       $('body').toggleClass('overflow');
     });
+
+    var scroll = window.scrollY;
+    var header = document.getElementById("navbar");
+
+    var toggle = function() {
+      //   if (scroll < scrollY) {
+      //     header.classList.add('navbar--hidden');
+      //     // header.style.transform = "translateY(0%)";
+      //   } else {
+      //     // header.style.transform = "translateY(-100%)";
+      //     header.classList.remove('navbar--hidden');
+      //   }
+      header.classList.toggle('navbar--hidden', scroll < scrollY);
+      scroll = scrollY;
+    }
+
+    window.onscroll = toggle;
+    window.onload = toggle;
+    window.onrisize = toggle;
   </script>
 </body>
 

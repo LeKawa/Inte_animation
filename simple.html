@@ -12,7 +12,7 @@
 
 <body>
   <header>
-    <section class="Header">
+    <section class="Header"  id="navbar">
       <div class="Header_Nav">
         <div class="Header_Nav_Home">
           <div class="Header_Nav_Home_Item">
@@ -34,14 +34,14 @@
 
           <nav>
             <ul class="main">
-              <li><a href="#0">Qui suis-je ?</a></li>
-              <li><a href="#0">Mes projets</a></li>
-              <li><a href="#0">Contact</a></li>
+              <li><a href="index.html">Qui suis-je ?</a></li>
+              <li><a href="projet.html">Mes projets</a></li>
+              <li><a href="index.html#contact">Contact</a></li>
             </ul>
           </nav>
           <div class="Header_Nav_Home_Link">
-            <a href="#">coucou</a>
-            <a href="#">salut</a>
+            <a href="projet.html">Projets</a>
+            <a href="contact.html#contact">Contact</a>
           </div>
         </div>
       </div>
@@ -56,13 +56,31 @@
       <img src="img/projet1.png" alt="Simple">
     </div>
     <div class="Article_Desc">
-      <p class="Article_Desc_Title">Le concept</p>
+      <p class="Article_Desc_Title">Le concept.</p>
       <p class="Article_Desc_Txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com</p>
     </div>
     <div class="Article_Link">
-      Vous pouvez en savoir plus sur
-      <a href="#" target="_blank">Github</a>
-
+      Vous pouvez voir le code sur
+      <a href="#" target="_blank">Github</a>.
+    </div>
+    <div class="Article_More">
+      <div class="Article_More_Img">
+        <img src="img/moi.jpg" alt="">
+      </div>
+      <div class="Article_More_Img">
+        <img src="img/moi.jpg" alt="">
+      </div>
+      <div class="Article_More_Img">
+        <img src="img/moi.jpg" alt="">
+      </div>
+      <div class="Article_More_Img">
+        <img src="img/moi.jpg" alt="">
+      </div>
+    </div>
+    <div class="Article_Desc">
+      <p class="Article_Desc_Title">Les Technos utilisées.</p>
+      <p class="Article_Desc_Tech">HTML / CSS.</p>
+      <p class="Article_Desc_Tech">JAVASCRIPT NATIF.</p>
     </div>
   </section>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -75,8 +93,27 @@
       $('.burger').toggleClass('clicked');
       $('.overlay').toggleClass('show');
       $('nav').toggleClass('show');
-      $('body').toggleClass('overflow');
     });
+  </script>
+  <script>
+    var scroll = window.scrollY;
+    var header = document.getElementById("navbar");
+
+    var toggle = function() {
+      //   if (scroll < scrollY) {
+      //     header.classList.add('navbar--hidden');
+      //     // header.style.transform = "translateY(0%)";
+      //   } else {
+      //     // header.style.transform = "translateY(-100%)";
+      //     header.classList.remove('navbar--hidden');
+      //   }
+      header.classList.toggle('navbar--hidden', scroll < scrollY);
+      scroll = scrollY;
+    }
+
+    window.onscroll = toggle;
+    window.onload = toggle;
+    window.onrisize = toggle;
   </script>
 </body>
 

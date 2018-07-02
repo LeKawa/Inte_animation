@@ -3,17 +3,38 @@
   display: flex;
   flex-direction: column;
 
+  &_More {
+    width: 90%;
+    margin: 100px auto 50px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &_Img {
+      width: 100%;
+      overflow: hidden;
+      height: 50%;
+      margin-bottom: 50px;
+      @include breakpoint(laptop) {
+        width: 50%;
+        margin-bottom: 0px;
+      }
+    }
+  }
+
   &_Link {
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
     font-size: 18Px;
     font-family: 'Montserrat', sans-serif;
     color: black;
+    @include breakpoint(laptop) {
+      width: 70%;
+    }
 
     & > a {
       text-decoration: none;
       color: black;
-      transition: all .2s ease-out;
+      transition: all 0.2s ease-out;
       font-family: 'Montserrat', sans-serif;
       font-weight: 700;
 
@@ -24,21 +45,39 @@
   }
 
   &_Desc {
-    width: 70%;
-    margin: 100px auto;
+    width: 90%;
+    margin: 100px auto 50px;
+    @include breakpoint(laptop) {
+      width: 70%;
+    }
+    &:nth-child(2n) {
+    margin: 0px auto 100px;
+    }
+
+    &_Tech {
+      font-size: 18px;
+      padding-top: 50px;
+      font-family: 'Montserrat',sans-serif;
+    }
 
     &_Title {
-      font-size: 48px;
+      font-size: 36px;
       font-family: 'Raleway',sans-serif;
       font-weight: 700;
+      @include breakpoint(laptop) {
+        font-size: 48px;
+      }
     }
 
     &_Txt {
       padding-top: 50px;
       font-family: 'Montserrat',sans-serif;
-      width: 80%;
+      width: 90%;
       font-size: 18px;
       line-height: 170%;
+      @include breakpoint(laptop) {
+        width: 80%;
+      }
     }
   }
 
@@ -49,24 +88,31 @@
     flex-direction: column;
 
     &_Txt {
-      padding-top: 30%;
       font-size: 18px;
       padding-bottom: 30px;
       font-family: 'Montserrat', sans-serif;
+      padding-top: 60%;
+      @include breakpoint(laptop) {
+        padding-top: 30%;
+      }
     }
 
     &_Title {
       font-weight: 700;
-      font-size: 35Px;
+      font-size: 36Px;
       font-family: 'Raleway', sans-serif;
       padding-bottom: 20%;
+      @include breakpoint(laptop) {
+        font-size: 38px;
+      }
     }
   }
 
   &_Img {
     width: 100%;
-    height: 300px;
+    height: 400px;
     overflow: hidden;
+
 
     & > img {
       width: 100%;

@@ -25,7 +25,6 @@
         line-height: 150%;
         font-family: 'Montserrat', sans-serif;
         @include breakpoint(laptop) {
-          font-size: 18px;
         }
       }
 
@@ -38,6 +37,7 @@
         @include breakpoint(laptop) {
           padding-top: 50px;
           padding-top: 100px;
+          font-weight: 700;
         }
       }
 
