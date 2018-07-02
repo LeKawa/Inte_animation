@@ -9,28 +9,7 @@
 @import "./components/contact";
 @import "./components/projets";
 @import "./components/article";
-
-// /* FONTS */
-  //sass --watch scss/style.scss:css/style.css
-// @font-face {
-//   font-family: 'kraft_monoregular';
-//   src: url('../font/kraftmono-webfont.woff2') format('woff2'), url('../font/kraftmono-webfont.woff') format('woff');
-// }
-//
-// @font-face {
-//   font-family: 'kraft_monoitalic';
-//   src: url('../font/kraftmono-italic-webfont.woff2') format('woff2'), url('../font/kraftmono-italic-webfont.woff') format('woff');
-// }
-//
-// @font-face {
-//   font-family: 'rajdhanisemibold';
-//   src: url('../font/rajdhani-semibold-webfont.woff2') format('woff2'), url('../font/rajdhani-semibold-webfont.woff') format('woff');
-// }
-
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+@import "./components/waiting";
 
 ::-webkit-scrollbar {
     width: 10px;

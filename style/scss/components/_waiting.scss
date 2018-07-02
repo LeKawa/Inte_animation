@@ -1,0 +1,16 @@
+.Waiting {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  color: black;
+  justify-content: center;
+  &_Container {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 18Px;
+    @include breakpoint(laptop) {
+      font-size: 32Px;
+    }
+  }
+}
