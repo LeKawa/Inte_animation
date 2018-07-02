@@ -14,6 +14,16 @@
   <meta name="description" content="Bonjour à toi, je suis Hector Travaillé un UX / UI designer...">
   <meta property="og:site_name" content="HectorTravaillé">
   <title>Welcome !</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116376698-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-116376698-1');
+</script>
+
   <link rel="stylesheet" href="style/css/style.css">
 </head>
 
@@ -66,6 +76,8 @@
   </script>
   <script src="anime.min.js">
   </script>
+  <script src="transition.js">
+  </script>
   <script>
     $('.burger, .overlay').click(function() {
       $('.burger').toggleClass('clicked');
@@ -86,6 +98,34 @@
     window.onscroll = toggle;
     window.onload = toggle;
     window.onrisize = toggle;
+    (function() {
+      var lineMaker = new LineMaker({
+        parent: {
+          element: document.body,
+          position: 'append'
+        },
+        position: 'fixed',
+        lines: [{
+            top: 0,
+            left: '0',
+            width: '100vw',
+            height: '100vh',
+            color: '#FFFFFF',
+            hidden: false,
+            animation: {
+              duration: 1500,
+              easing: 'easeInOutCirc',
+              delay: 0,
+              direction: 'BottomTop'
+            }
+          }
+        ]
+      });
+
+      setTimeout(function() {
+        lineMaker.animateLinesOut();
+      }, 500);
+    })();
   </script>
 </body>
 

@@ -5,8 +5,28 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Raleway:400,500,700" rel="stylesheet">
   <link rel="icon" type="image/png" href="img/logo.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Webdesign,developpement,alternance,ux,ui,travaillé,hetic,Hector,Travaillé, Hector Travaillé, Travaille">
+  <meta property="og:title" content="Hector_Travaillé">
+  <meta property="og:url" content="http://www.hectortrv.com/">
+  <meta name="theme-color" content="#000000">
+  <meta property="og:description" content="Bonjour à toi, je suis Hector Travaillé un UX / UI designer..">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Bonjour à toi, je suis Hector Travaillé un UX / UI designer...">
+  <meta property="og:site_name" content="HectorTravaillé">
   <title>Welcome !</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116376698-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-116376698-1');
+  </script>
+
   <link rel="stylesheet" href="style/css/style.css">
 </head>
 
@@ -95,7 +115,8 @@
         </p>
         <p class="Who_Container_Item_Title">Touche à tout</p>
         <p class="Who_Container_Item_Txt">Il y a d'autre technos que j'aime utiliser, lors de mon temps libre j'aime réaliser des petits " trucs " avec des logiciels comme Unity ou Cinema4d. Je fais partie aussi d'une équipe qui s'appelle Pixelbiester qui créer des solutions 3d pour des
-          entreprises.</p>
+          entreprises.
+        </p>
       </div>
     </div>
   </section>
@@ -125,6 +146,8 @@
   </script>
   <script src="anime.min.js">
   </script>
+  <script src="transition.js">
+  </script>
   <script>
     $('.burger, .overlay').click(function() {
       $('.burger').toggleClass('clicked');
@@ -144,6 +167,36 @@
     window.onscroll = toggle;
     window.onload = toggle;
     window.onrisize = toggle;
+  </script>
+  <script>
+    (function() {
+      var lineMaker = new LineMaker({
+        parent: {
+          element: document.body,
+          position: 'append'
+        },
+        position: 'fixed',
+        lines: [{
+            top: 0,
+            left: '0',
+            width: '100vw',
+            height: '100vh',
+            color: '#FFFFFF',
+            hidden: false,
+            animation: {
+              duration: 1500,
+              easing: 'easeInOutCirc',
+              delay: 0,
+              direction: 'BottomTop'
+            }
+          }
+        ]
+      });
+
+      setTimeout(function() {
+        lineMaker.animateLinesOut();
+      }, 500);
+    })();
   </script>
 </body>
 

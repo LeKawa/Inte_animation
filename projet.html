@@ -5,8 +5,25 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Raleway:400,500,700" rel="stylesheet">
   <link rel="icon" type="image/png" href="img/logo.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Webdesign,developpement,alternance,ux,ui,travaillé,hetic,Hector,Travaillé, Hector Travaillé, Travaille">
+  <meta property="og:title" content="Hector_Travaillé">
+  <meta property="og:url" content="http://www.hectortrv.com/">
+  <meta name="theme-color" content="#000000">
+  <meta property="og:description" content="Bonjour à toi, je suis Hector Travaillé un UX / UI designer..">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Bonjour à toi, je suis Hector Travaillé un UX / UI designer...">
+  <meta property="og:site_name" content="HectorTravaillé">
   <title>Welcome !</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116376698-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-116376698-1');
+</script>
+
   <link rel="stylesheet" href="style/css/style.css">
 </head>
 
@@ -40,7 +57,7 @@
             </ul>
           </nav>
           <div class="Header_Nav_Home_Link">
-                        <a href="index.html">A propos</a>
+            <a href="index.html">A propos</a>
             <a href="projet.html">Projets</a>
             <a href="index.html#contact">Contact</a>
           </div>
@@ -73,7 +90,7 @@
         <div class="Projets_Container_Right">
           <a href="decision.html" class="Projets_Container_Right_Link">
             <div class="Projets_Container_Right_Img">
-                <img src="img/ui3.jpg" alt="">
+              <img src="img/ui3.jpg" alt="">
             </div>
           </a>
           <a href="waiting.html" class="Projets_Container_Right_Link">
@@ -96,6 +113,8 @@
   </script>
   <script src="anime.min.js">
   </script>
+  <script src="transition.js">
+  </script>
   <script>
     $('.burger, .overlay').click(function() {
       $('.burger').toggleClass('clicked');
@@ -104,24 +123,54 @@
       $('body').toggleClass('overflow');
     });
 
-      var scroll = window.scrollY;
-      var header = document.getElementById("navbar");
+    var scroll = window.scrollY;
+    var header = document.getElementById("navbar");
 
-      var toggle = function() {
-        //   if (scroll < scrollY) {
-        //     header.classList.add('navbar--hidden');
-        //     // header.style.transform = "translateY(0%)";
-        //   } else {
-        //     // header.style.transform = "translateY(-100%)";
-        //     header.classList.remove('navbar--hidden');
-        //   }
-        header.classList.toggle('navbar--hidden', scroll < scrollY);
-        scroll = scrollY;
-      }
+    var toggle = function() {
+      //   if (scroll < scrollY) {
+      //     header.classList.add('navbar--hidden');
+      //     // header.style.transform = "translateY(0%)";
+      //   } else {
+      //     // header.style.transform = "translateY(-100%)";
+      //     header.classList.remove('navbar--hidden');
+      //   }
+      header.classList.toggle('navbar--hidden', scroll < scrollY);
+      scroll = scrollY;
+    }
 
-      window.onscroll = toggle;
-      window.onload = toggle;
-      window.onrisize = toggle;
+    window.onscroll = toggle;
+    window.onload = toggle;
+    window.onrisize = toggle;
+
+
+    (function() {
+      var lineMaker = new LineMaker({
+        parent: {
+          element: document.body,
+          position: 'append'
+        },
+        position: 'fixed',
+        lines: [{
+            top: 0,
+            left: '0',
+            width: '100vw',
+            height: '100vh',
+            color: '#FFFFFF',
+            hidden: false,
+            animation: {
+              duration: 1500,
+              easing: 'easeInOutCirc',
+              delay: 0,
+              direction: 'BottomTop'
+            }
+          }
+        ]
+      });
+
+      setTimeout(function() {
+        lineMaker.animateLinesOut();
+      }, 500);
+    })();
   </script>
 </body>
 

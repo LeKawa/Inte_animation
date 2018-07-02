@@ -2,7 +2,7 @@
   height: 80Px;
   width: 100%;
   display: flex;
-  transition: all 0.1s ease-out;
+  transition: all 0.2s ease-out;
   position: fixed;
   z-index: 100000;
   background-color: white;
@@ -43,13 +43,13 @@
         }
 
         & > a {
-          height: 105px;
           width: 100px;
           display: flex;
           align-items: center;
           justify-content: center;
-          font-weight: 500;
+          font-weight: 700;
           padding-bottom: 15px;
+          font-size: 14px;
           font-family: 'Montserrat', sans-serif;
           text-decoration: none;
           color: black;
@@ -57,7 +57,7 @@
           transition: all 0.2s ease-out;
 
           &:hover {
-            // background-color: red;
+            opacity: 0.5;
           }
         }
       }

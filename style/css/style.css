@@ -131,7 +131,7 @@ table {
   height: 80Px;
   width: 100%;
   display: flex;
-  transition: all 0.1s ease-out;
+  transition: all 0.2s ease-out;
   position: fixed;
   z-index: 100000;
   background-color: white; }
@@ -164,18 +164,20 @@ table {
           .Header_Nav_Home_Link {
             display: flex; } }
         .Header_Nav_Home_Link > a {
-          height: 105px;
           width: 100px;
           display: flex;
           align-items: center;
           justify-content: center;
-          font-weight: 500;
+          font-weight: 700;
           padding-bottom: 15px;
+          font-size: 14px;
           font-family: 'Montserrat', sans-serif;
           text-decoration: none;
           color: black;
           text-align: center;
           transition: all 0.2s ease-out; }
+          .Header_Nav_Home_Link > a:hover {
+            opacity: 0.5; }
 
 *,
 *:after,
@@ -592,7 +594,7 @@ nav ul.sub li a:hover {
     .Who_Container_Item {
       overflow: hidden;
       width: 100%;
-      height: 50%; }
+      height: 60%; }
       @media (min-width: 1024px) {
         .Who_Container_Item {
           height: 80%;
@@ -684,7 +686,7 @@ nav ul.sub li a:hover {
         padding-top: 30Px; }
       .Contact_Link_Item:hover {
         color: white;
-        background-color: black; }
+        background-color: #4d27af; }
   .Contact_Item > h3 {
     font-weight: 700;
     padding-top: 100px;
@@ -861,12 +863,35 @@ nav ul.sub li a:hover {
 ::-webkit-scrollbar {
   width: 10px; }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: #f1f1f1; }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: black; }
+
+body {
+  width: 100%; }
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.decolines {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 100000000000000;
+  top: 0;
+  left: 0;
+  pointer-events: none; }
+
+.decolines--fixed {
+  position: fixed;
+  width: 100%;
+  height: 100%; }
+
+.decoline {
+  position: absolute; }
 
 /*# sourceMappingURL=style.css.map */
