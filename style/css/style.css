@@ -226,7 +226,8 @@ body.overflow {
   display: block;
   width: 30px;
   height: 4px;
-  background-color: black;
+  border-radius: 10px;
+  background-color: #4d27af;
   -webkit-transition-property: background-color, -webkit-transform;
   -moz-transition-property: background-color, -moz-transform;
   -o-transition-property: background-color, -o-transform;
@@ -266,7 +267,8 @@ body.overflow {
 
 .burger.clicked span:after,
 .burger.clicked span:before {
-  background-color: black; }
+  background-color: #4d27af;
+  border-radius: 10px; }
 
 .burger:hover {
   cursor: pointer; }
@@ -491,8 +493,6 @@ nav ul.sub li a {
 nav ul.sub li a:hover {
   color: #b7ac7f; }
 
-/*  OVERLAY
-========================================== */
 .overlay {
   position: fixed;
   top: 0;
@@ -554,7 +554,7 @@ nav ul.sub li a:hover {
     margin: 100px auto; }
     @media (min-width: 1024px) {
       .Desc_Item {
-        margin: 150px auto 150px;
+        margin: 150px auto;
         width: 70%; } }
     .Desc_Item_Txt {
       width: 90%;
@@ -582,6 +582,54 @@ nav ul.sub li a:hover {
         width: 10Px;
         height: 10px;
         background-color: red; }
+
+@-webkit-keyframes ani {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    text-shadow: 0 0 0 #4d27af;
+    color: black; }
+  30% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    text-shadow: 0 0 0 #4d27af;
+    color: black; }
+  70% {
+    -webkit-transform: translate3d(0.08em, -0.08em, 0);
+    transform: translate3d(0.08em, -0.08em, 0);
+    text-shadow: -0.08em 0.08em #4d27af;
+    color: black; }
+  100% {
+    -webkit-transform: translate3d(0.08em, -0.08em, 0);
+    transform: translate3d(0.08em, -0.08em, 0);
+    text-shadow: -0.08em 0.08em #4d27af;
+    color: black; } }
+@keyframes ani {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    text-shadow: 0 0 0 #4d27af;
+    color: black; }
+  30% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    text-shadow: 0 0 0 #4d27af;
+    color: black; }
+  70% {
+    -webkit-transform: translate3d(0.08em, -0.08em, 0);
+    transform: translate3d(0.08em, -0.08em, 0);
+    text-shadow: -0.08em 0.08em #4d27af;
+    color: black; }
+  100% {
+    -webkit-transform: translate3d(0.08em, -0.08em, 0);
+    transform: translate3d(0.08em, -0.08em, 0);
+    text-shadow: -0.08em 0.08em #4d27af;
+    color: black; } }
+span {
+  position: relative;
+  display: inline-block;
+  -webkit-animation: ani 1s infinite alternate cubic-bezier(0.86, 0, 0.07, 1);
+  animation: ani 1s infinite alternate cubic-bezier(0.86, 0, 0.07, 1); }
 
 .Who {
   display: flex;
@@ -760,7 +808,8 @@ nav ul.sub li a:hover {
     width: 90%;
     margin: 100px auto 50px;
     display: flex;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    justify-content: space-between; }
     .Article_More_Img {
       width: 100%;
       overflow: hidden;
@@ -768,13 +817,24 @@ nav ul.sub li a:hover {
       margin-bottom: 50px; }
       @media (min-width: 1024px) {
         .Article_More_Img {
-          width: 50%;
-          margin-bottom: 0px; } }
+          width: 48%;
+          margin-bottom: 0; } }
+      .Article_More_Img:nth-child(3n) {
+        margin-top: 0; }
+        @media (min-width: 1024px) {
+          .Article_More_Img:nth-child(3n) {
+            margin-top: 3%; } }
+      .Article_More_Img:nth-child(4n) {
+        margin-top: 0; }
+        @media (min-width: 1024px) {
+          .Article_More_Img:nth-child(4n) {
+            margin-top: 3%; } }
       .Article_More_Img > img {
         width: 100%; }
   .Article_Link {
     width: 90%;
     margin: 0 auto;
+    line-height: 150%;
     font-size: 18Px;
     font-family: 'Montserrat', sans-serif;
     color: black; }
@@ -796,7 +856,7 @@ nav ul.sub li a:hover {
       .Article_Desc {
         width: 70%; } }
     .Article_Desc:nth-child(2n) {
-      margin: 0px auto 100px; }
+      margin: 0 auto 100px; }
     .Article_Desc_Tech {
       font-size: 18px;
       padding-top: 50px;

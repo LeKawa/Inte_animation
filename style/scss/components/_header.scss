@@ -117,7 +117,8 @@ body.overflow {
   display: block;
   width: 30px;
   height: 4px;
-  background-color: black;
+  border-radius: 10px;
+  background-color: #4d27af;
   -webkit-transition-property: background-color, -webkit-transform;
   -moz-transition-property: background-color, -moz-transform;
   -o-transition-property: background-color, -o-transform;
@@ -164,7 +165,8 @@ body.overflow {
 
 .burger.clicked span:after,
 .burger.clicked span:before {
-  background-color: black;
+  background-color:  #4d27af;
+  border-radius: 10px;
 }
 
 .burger:hover {
@@ -425,9 +427,6 @@ nav ul.sub li a {
 nav ul.sub li a:hover {
   color: #b7ac7f;
 }
-/*  OVERLAY
-========================================== */
-
 .overlay {
   position: fixed;
   top: 0;

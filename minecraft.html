@@ -15,21 +15,24 @@
   <meta property="og:site_name" content="HectorTravaillé">
   <title>Welcome !</title>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116376698-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116376698-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'UA-116376698-1');
-</script>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-116376698-1');
+  </script>
 
   <link rel="stylesheet" href="style/css/style.css">
 </head>
 
 <body>
   <header>
-    <section class="Header"  id="navbar">
+    <section class="Header" id="navbar">
       <div class="Header_Nav">
         <div class="Header_Nav_Home">
           <div class="Header_Nav_Home_Item">
@@ -67,42 +70,40 @@
   </header>
   <section class="Article">
     <div class="Article_Container">
-      <p class="Article_Container_Txt">Decision game, Developpement</p>
-      <p class="Article_Container_Title">Les aventures de Titouan.</p>
+      <p class="Article_Container_Txt">3d, Cinema4d.</p>
+      <p class="Article_Container_Title">Minecraft.</p>
     </div>
     <div class="Article_Img">
-      <img src="img/ui3.jpg" alt="Simple">
+      <img src="img/minecraft.png" alt="Minecraft">
     </div>
     <div class="Article_Desc">
-      <p class="Article_Desc_Title">Le concept.</p>
-      <p class="Article_Desc_Txt">Le concept était simple. Etablir une histoire intéractive dans un site, la contraintes était de réalisé des requêtes AJAX. Nous avions une totale liberté sur le choix du thème.</p>
+      <p class="Article_Desc_Title">Kezako.</p>
+      <p class="Article_Desc_Txt">Le " lego numérique " m'a attiré quand j'étais alors au collège. J'y fais des constructions pendant plus de 6 ans, ça fait pas mal de temps. Cela a éveillé en moi quelque chose, de la persévérance, mais surtout mon goût à la création. Partir de rien et me faire du bricolage avec des blocks afin de retranscrire mes idées.</p>
     </div>
     <div class="Article_Link">
-      Vous pouvez tester l'histoire de Titouan sur ce
-      <a href="https://maximeoger.github.io/decision_game/" target="_blank">Lien</a>.
+    Je suis membre d'une équipe de constructions qui propose des cartes aventures pour Microsoft. Elle s'appelle
+      <a href="https://pixelbiester.net" target="_blank">Pixelbiester</a>.
     </div>
     <div class="Article_More">
       <div class="Article_More_Img">
-        <img src="img/decision1.png" alt="">
+        <img src="img/minecraft1.jpg" alt="1">
       </div>
       <div class="Article_More_Img">
-        <img src="img/decision2.png" alt="">
+        <img src="img/minecraft2.jpg" alt="2">
       </div>
       <div class="Article_More_Img">
-        <img src="img/decision3.png" alt="">
+        <img src="img/minecraft3.jpg" alt="3">
       </div>
       <div class="Article_More_Img">
-        <img src="img/decision4.png" alt="">
+        <img src="img/minecraft4.jpg" alt="4">
       </div>
     </div>
     <div class="Article_Desc">
       <p class="Article_Desc_Title">Les Technos utilisées.</p>
-      <p class="Article_Desc_Tech">HTML / CSS.</p>
-      <p class="Article_Desc_Tech">JAVASCRIPT NATIF.</p>
-      <p class="Article_Desc_Tech">AJAX.</p>
-      <p class="Article_Desc_Tech">Illustrator.</p>
-      <p class="Article_Desc_Tech">Tweenmax.</p>
-      <p class="Article_Desc_Tech">Anime.js.</p>
+      <p class="Article_Desc_Tech">Minecraft.</p>
+      <p class="Article_Desc_Tech">Photoshop.</p>
+      <p class="Article_Desc_Tech">Cinema4d.</p>
+      <p class="Article_Desc_Tech">Sketchfab.</p>
     </div>
   </section>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -148,20 +149,19 @@
         },
         position: 'fixed',
         lines: [{
-            top: 0,
-            left: '0',
-            width: '100vw',
-            height: '100vh',
-            color: '#FFFFFF',
-            hidden: false,
-            animation: {
-              duration: 1500,
-              easing: 'easeInOutCirc',
-              delay: 0,
-              direction: 'BottomTop'
-            }
+          top: 0,
+          left: '0',
+          width: '100vw',
+          height: '100vh',
+          color: '#FFFFFF',
+          hidden: false,
+          animation: {
+            duration: 1500,
+            easing: 'easeInOutCirc',
+            delay: 0,
+            direction: 'BottomTop'
           }
-        ]
+        }]
       });
 
       setTimeout(function() {
